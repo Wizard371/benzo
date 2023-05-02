@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="./style.css">
+    <script type="module" src="players.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,7 @@
 <body>
     <main class="outer-container">
         <div class="logo">
-            <img src="./img/logo.png" alt="">
+            <img id="logopng" src="./img/logo.png" alt="">
         </div>
         <div class="parent">
             <div class="container">
@@ -24,42 +25,47 @@
     <nav>
         <ul>
             <li>
-                <a href="./index.html">Hjem</a>
+                <button class="knap">Hjem</button>
             </li>
             <li>
-                <a href="https://discord.gg/zenity">Discord</a>
+                <button class="knap">Discord</button>
             </li>
             <li>
-                <a href="./hjerte.html">Donation</a>
+                <button class="knap">Donationer</button>
             </li>
             <li>
-                <a href="./apply.html">Ansøgninger</a>
+                <button class="knap">Ansøgninger</button>
             </li>
         </ul>
     </nav>
-    <div class="container2">
 
-        <div class="boks2">123</div>
-
-        <div class="boks 3">
-            <p>Boks 3</p>
-        </div>
-
-        <div id="infoboks">
-            <p class="spillere" style="font-size: 60px;">Spillere Online:</p>
-            <br>
-            <div id="spiller-container">
-                <p class="container-spillere" style="font-size: 50px;">~~ / 64</p>
+    <!-- Midten -->
+    <div class="parent-mid">
+        <div class="container-staff">
+            <h1 class="staff-h1">Vores Staff Medlemmer</h1>
+            <div class="staff-tekst">
+                <p class="staff-medlem">Benzo - Server Owner</p>
+                <p class="staff-medlem">Wized - Lead Developer</p>
+                <p class="staff-medlem">Preace - Community Manager</p>
+                <p class="staff-medlem">Marko - Administrator</p>
+                <p class="staff-medlem">Thomsen - Supporter</p>
             </div>
         </div>
+        <div class="container-spillere">
+            <h1 class="spillere-h1">Spillere Online</h1>
+        </div>
+        <div class="container-info">
+            <h1 class="info-h1">Informationer Om Os</h1>
+            <p class="info-tekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, inventore, qui quod amet rem autem beatae est voluptatibus nihil vitae saepe nam incidunt praesentium ab iure rerum, cupiditate quaerat exercitationem adipisci magni vel! Minus
+                sapiente, a temporibus rerum eveniet exercitationem distinctio doloremque quisquam possimus, nam aliquid commodi dignissimos nihil, corrupti nemo dolorem impedit hic dolorum placeat libero. Vel, delectus porro!</p>
+        </div>
     </div>
+
+    <!-- Footer -->
     <div class="footer">
         <div>
-            <p class="footer-tekst">Made with &hearts; by Wized</p>
-
+            <p type="module" class="footer-tekst">Made with &hearts; by Wized</p>
         </div>
-        <!-- <p class="made-container"> Made with &#10084; by Noah Nielsen </p> -->
-    </div>
     </div>
     </main>
 
