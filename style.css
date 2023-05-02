@@ -17,6 +17,9 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        background-image: url(./img/background.jpg);
+        position: fixed;
+        background-size: cover;
     }
     
     .outer-container {
@@ -58,6 +61,7 @@
     #header {
         position: relative;
         font-size: 90px;
+        color: white;
         font-weight: bold;
         justify-content: center;
         font-family: O;
@@ -67,7 +71,6 @@
     nav {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.575);
-        border-bottom: 2px solid black;
         width: 100%;
     }
     
@@ -85,15 +88,16 @@
         width: 150px;
         padding: 0px;
         border-radius: 15px;
-        background-color: grey;
+        background-color: rgba(0, 0, 0, 0.575);
         color: white;
+        font-weight: bold;
         text-decoration: none;
         text-align: center;
         border: none;
     }
     
     .knap:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         cursor: pointer;
     }
     
@@ -108,21 +112,22 @@
     }
     /* Under knapperne */
     
-    .container-info {
-        display: flex;
-        background: black;
-    }
-    
     .footer {
-        border-top: 1px solid black;
         flex: 0 1 40px;
         display: flex;
-        margin-top: auto;
+        color: white;
+        font-weight: bold;
         background-color: rgba(0, 0, 0, 0.575);
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        height: 5vh;
+        margin-left: 20px;
+        margin-left: 0px;
+    }
+    
+    .footer-tekst {
+        color: white;
+        position: fixed;
+        bottom: 0;
+        margin-left: 5px;
+        margin-bottom: 5px;
     }
     /* Midten */
     
@@ -152,6 +157,7 @@
         background-color: rgba(0, 0, 0, 0.575);
         border-radius: 20px;
         margin: auto;
+        margin-left: 125px;
         display: flex;
         text-align: center;
         display: inline-block;
@@ -163,9 +169,22 @@
         background-color: rgba(0, 0, 0, 0.575);
         border-radius: 20px;
         margin: auto;
+        margin-right: 125px;
         display: flex;
         text-align: center;
         display: inline-block;
+    }
+    
+    .container-info:hover {
+        transform: scale(1.1);
+    }
+    
+    .container-staff:hover {
+        transform: scale(1.1);
+    }
+    
+    .container-spillere:hover {
+        transform: scale(1.1);
     }
     /* Staff Boks */
     
@@ -234,5 +253,5 @@
         padding-top: 20px;
         padding-left: 6px;
         padding-right: 6px;
-        word-break: break-all;
+        /* word-break: break-all; */
     }
