@@ -25,13 +25,13 @@
     <nav>
         <ul>
             <li>
-                <button class="knap">Hjem</button>
+                <button onClick="window.location.href='index.html';" class="knap">Hjem</button>
             </li>
             <li>
                 <button class="knap">Discord</button>
             </li>
             <li>
-                <button class="knap">Donationer</button>
+                <button onClick="window.location.href='donationer.html';" class="knap">Donationer</button>
             </li>
             <li>
                 <button class="knap">Ansøgninger</button>
@@ -73,6 +73,12 @@
         </div>
     </div>
     </main>
+
+    <script type="text/javascript">
+        function redirect() {
+            window.location(donationer.html);
+        }
+    </script>
 
 </body>
 

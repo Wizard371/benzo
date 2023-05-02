@@ -135,6 +135,7 @@
         display: flex;
         flex-grow: 1;
         height: 80vh;
+        width: 1920px;
         margin: 0 0;
         padding: 0 0;
         background-color: rgba(0, 0, 0, 0.575);
@@ -170,6 +171,18 @@
         border-radius: 20px;
         margin: auto;
         margin-right: 125px;
+        display: flex;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .container-guld {
+        width: 25%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0.575);
+        border-radius: 20px;
+        margin: auto;
+        margin-left: 125px;
         display: flex;
         text-align: center;
         display: inline-block;
@@ -254,4 +267,38 @@
         padding-left: 6px;
         padding-right: 6px;
         /* word-break: break-all; */
+    }
+    /* Donation Side */
+    
+    .knap-buy {
+        width: 110px;
+        height: 55px;
+        margin-top: 30px;
+        background-color: rgba(12, 133, 32, 0.616);
+        border: 0px;
+        border-radius: 30px;
+    }
+    
+    .knap-buy:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    h3 {
+        font-size: 26px;
+        font-weight: lighter;
+        color: white;
+    }
+    
+    .custom-tilbud {
+        font-size: 17px;
+        font-weight: bold;
+        color: white;
+        flex: 0 1 40px;
+        display: flex;
+        margin: auto;
+        padding: 0 0;
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
     }
